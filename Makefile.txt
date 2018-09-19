@@ -1,4 +1,4 @@
-PROGRAM= hello.c
+PROGRAM= hello
 
 run: ${PROGRAM}
     ./${PROGRAM}
