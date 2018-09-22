@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main() {
-  char buf[100], str[100];
+  char str[100];
 	//printf("Enter name: ");
-  if (fgets(buf, sizeof buf, stdin) != NULL) {
-    if (sscanf(buf, "%s", &str) != 1) {
-      printf("Hello, nameless!\n");
+	scanf("%s", str);
+    if (str[0]) {
+        printf("Hello, %s!\n", str);
+      
     }else{
-      printf("Hello, %s!\n", str);
+        printf("Hello, nameless!\n");
     }
-  }
 	
 	return 0;
 }
