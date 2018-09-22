@@ -2,8 +2,8 @@
 int main() {
   char str[100];
 	//printf("Enter name: ");
-	scanf("%s", str);
-    if (str[0]) {
+	//scanf("%s", str);
+    if (scanf("%s", str)) {
         printf("Hello, %s!\n", str);
       
     }else{
